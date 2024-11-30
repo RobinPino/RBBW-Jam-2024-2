@@ -11,6 +11,9 @@ public class ToolManager : MonoBehaviour
 
     private void Start()
     {
+        foreach (ToolSO tool in toolList) { 
+            tool.lastUsedTimestamp = -100;
+        }
         currentTool = toolList[0];
     }
 
@@ -26,7 +29,6 @@ public class ToolManager : MonoBehaviour
             return;
         }
 
-        tool.lastUsedTimestamp = Time.time;
         currentTool.DeactivateEvent.Invoke(this);
         StartCoroutine(SwitchToTool(tool));        
     }
@@ -35,6 +37,7 @@ public class ToolManager : MonoBehaviour
     {
         yield return new WaitForSeconds(tool.activationTime);
         tool.ActivateEvent.Invoke(this);
+        tool.lastUsedTimestamp = Time.time;
         currentTool = tool;
     }
 
