@@ -27,7 +27,7 @@ public class Shooting : MonoBehaviour
 
         float ZRotation = Mathf.Atan2(MousePosition.y, MousePosition.x) * Mathf.Rad2Deg;
 
-        transform.rotation = Quaternion.Euler(0, 0, ZRotation);
+        transform.rotation = Quaternion.Euler(0, 0, ZRotation - 90);
 
         if (!CanFire)
         {
