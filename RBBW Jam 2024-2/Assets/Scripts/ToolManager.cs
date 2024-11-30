@@ -5,26 +5,16 @@ using UnityEngine;
 
 public class ToolManager : MonoBehaviour
 {
-    public Tool currentTool;
+    public ToolSO currentTool;
 
-    public List<Tool> toolList;
+    public List<ToolSO> toolList;
 
-    [Serializable]
-    public class Tool
-    {
-        public string name;
-        public EventChannelSO ActivateEvent;
-        public EventChannelSO DeactivateEvent;
-        public float cooldown;
-        public float lastUsedTimestamp = -100;
-        public float activationTime;
-    }
     private void Start()
     {
         currentTool = toolList[0];
     }
 
-    public void SwitchTool(Tool tool)
+    public void SwitchTool(ToolSO tool)
     {
         if(currentTool == tool)
         {
@@ -41,7 +31,7 @@ public class ToolManager : MonoBehaviour
         StartCoroutine(SwitchToTool(tool));        
     }
 
-    IEnumerator SwitchToTool(Tool tool)
+    IEnumerator SwitchToTool(ToolSO tool)
     {
         yield return new WaitForSeconds(tool.activationTime);
         tool.ActivateEvent.Invoke(this);
