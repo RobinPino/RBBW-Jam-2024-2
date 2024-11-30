@@ -39,7 +39,6 @@ public class SimpleScanner : MonoBehaviour
         {
             currentValue = curve.Evaluate(t / duration * curve.keys[curve.length - 1].time) * scanMaxRange;
             mat.SetFloat("_RevealRadius", currentValue);
-            print(t);
             t += step;
             yield return new WaitForSeconds(step);
         }

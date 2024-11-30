@@ -49,7 +49,7 @@ Material:
     - _OutlineThickness: 0.2
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RevealRadius: 4.49
+    - _RevealRadius: 0
     m_Colors:
     - _CentrePos: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 0.3443396, g: 1, b: 0.41633368, a: 0}
