@@ -8,5 +8,6 @@ public class Shape : ScriptableObject
 	public enum Type	{Square,Triangle,Hexagon};
     public Type type;
     public Sprite sprite;
+    public GameObject prefab;
     public int health;
 }
