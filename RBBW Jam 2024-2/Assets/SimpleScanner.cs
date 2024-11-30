@@ -5,13 +5,18 @@ using UnityEngine;
 
 public class SimpleScanner : MonoBehaviour
 {
-    [SerializeField] Material mat;
+    Material mat;
     [SerializeField] float scanMaxRange;
 
     [SerializeField] AnimationCurve RevealCurve;
     [SerializeField] float revealDuration;
     [SerializeField] AnimationCurve StopCurve;
     [SerializeField] float stopDuration;
+
+    private void Start()
+    {
+        mat = GetComponent<SpriteRenderer>().material;
+    }
 
     [ContextMenu("Start Scan")]
     public void StartScan()

@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SimpleScanner
-  m_Shader: {fileID: -6465566751694194690, guid: 52a652d6b0e0c2d4d9bcfd183f346cb2, type: 3}
+  m_Name: RadarScannerBG
+  m_Shader: {fileID: -6465566751694194690, guid: d6ebb82d3342c7f40914cc8b815a3aad, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -23,10 +23,6 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -45,17 +41,17 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _OnlyOutline: 0
-    - _OutlineThickness: 0.2
+    - _IsScanning: 0
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RevealRadius: 4.49
+    - _RevealRadius: 0
+    - _RevealWidth: 0.13
+    - _RotateSpeed: 0.2
     m_Colors:
     - _CentrePos: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 0.3443396, g: 1, b: 0.41633368, a: 0}
-    - _OutlineColor: {r: 0.15161042, g: 0.6698113, b: 0.022116425, a: 0}
+    - _Color: {r: 0.5235849, g: 1, b: 0.5259188, a: 0.2784314}
   m_BuildTextureStacks: []
---- !u!114 &2943690387033619504
+--- !u!114 &6597340030608213055
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
