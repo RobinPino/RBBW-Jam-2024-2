@@ -96,7 +96,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3028362236847809242}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: ToggleRadar
+        m_MethodName: ToggleScanner
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -104,7 +104,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &7229366528473021093
 MonoBehaviour:
@@ -124,7 +124,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3028362236847809242}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: ToggleScanner
+        m_MethodName: ToggleRadar
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -132,7 +132,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &9026357787979406783
 MonoBehaviour:
