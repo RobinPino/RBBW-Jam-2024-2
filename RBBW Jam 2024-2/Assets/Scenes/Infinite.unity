@@ -2219,7 +2219,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2103ef59c448b5446931a5a38943a97a, type: 2}
   - {fileID: 11400000, guid: 3cf0f8d7ef8d27446823aeac9833842d, type: 2}
   - {fileID: 11400000, guid: a2e84f6687b066840984ce683afe9843, type: 2}
-  radius: 15
+  radius: 10
   timeBetweenWaves: 15
   wavesSpawned: 0
 --- !u!1001 &2469431260379531539

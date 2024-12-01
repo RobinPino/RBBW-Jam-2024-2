@@ -9,7 +9,6 @@ public class PlayerHit : MonoBehaviour, IDamagable
     [SerializeField] int MaxHealth;
     [SerializeField] EventChannelSO playerHitChannel;
     [SerializeField] EventChannelSO playerDeathChannel;
-    public GameObject Panel;
 
     public AudioSource DeathSound;
 
@@ -47,6 +46,6 @@ public class PlayerHit : MonoBehaviour, IDamagable
     {
         Debug.Log("Player died");
         DeathSound.Play();
-        Panel.SetActive(true);
+        playerDeathChannel.Invoke(this);
     }
 }

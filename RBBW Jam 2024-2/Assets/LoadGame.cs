@@ -68,7 +68,7 @@ public class LoadGame : MonoBehaviour
     IEnumerator waitAndLoadScene()
     {
         yield return new WaitForSeconds(5.2f);
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
     IEnumerator waitForStartUp()
