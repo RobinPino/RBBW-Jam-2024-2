@@ -8,6 +8,7 @@ public class Bullet : MonoBehaviour
     private Camera MainCamera;
     private Rigidbody2D RigidBody;
     public float BulletSpeed;
+    [SerializeField] GameObject hitEffect;
 
     void Start()
     {
@@ -30,7 +31,7 @@ public class Bullet : MonoBehaviour
         if(collision.gameObject.tag == "Enemy")
         {
             Debug.Log("Hit!");
-
+            Instantiate(hitEffect, transform.position, Quaternion.identity);
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }
