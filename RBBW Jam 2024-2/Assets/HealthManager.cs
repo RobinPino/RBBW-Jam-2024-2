@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class HealthManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public int Counter = 0;
+    public GameObject[] Hearts;
+    public void removeHeart()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Hearts[Counter].SetActive(false);
+        Counter++;
     }
 }

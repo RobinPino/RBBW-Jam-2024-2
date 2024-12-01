@@ -15,6 +15,18 @@ public class PlayerHit : MonoBehaviour, IDamagable
         Health = MaxHealth;
     }
 
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            Debug.Log("Player Hit!");
+
+            Destroy(collision.gameObject);
+
+            TakeDamage(1);
+        }
+    }
+
     public void TakeDamage(int damage)
     {
         Health -= damage;
