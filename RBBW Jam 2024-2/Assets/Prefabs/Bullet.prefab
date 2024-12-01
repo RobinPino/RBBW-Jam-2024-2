@@ -101,6 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BulletSpeed: 15
   hitEffect: {fileID: 3519983498553579951, guid: 345e21162585ff843a6b4fd3d6c26c3c, type: 3}
+  enemyKillChannel: {fileID: 11400000, guid: 024d4d2cc1b3a4f469edb28655ee311f, type: 2}
 --- !u!50 &5646539951635075556
 Rigidbody2D:
   serializedVersion: 4
