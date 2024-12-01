@@ -24,4 +24,15 @@ public class Bullet : MonoBehaviour
         float ZRotation = Mathf.Atan2(Rotation.y, Rotation.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, ZRotation + 180);
     }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Enemy")
+        {
+            Debug.Log("Hit!");
+
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
+        }
+    }
 }

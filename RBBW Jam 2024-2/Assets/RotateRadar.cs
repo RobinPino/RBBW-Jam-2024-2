@@ -15,7 +15,7 @@ public class RotateRadar : MonoBehaviour
     private void Update()
     {
         float rot = (Shader.GetGlobalVector("_Time").y * rotateSpeed) % 1;
-        print(rot);
+        //print(rot);
         transform.rotation = Quaternion.Euler(0, 0, -rot * 360);
     }
 }
