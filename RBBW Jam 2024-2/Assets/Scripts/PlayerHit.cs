@@ -10,12 +10,12 @@ public class PlayerHit : MonoBehaviour, IDamagable
     [SerializeField] EventChannelSO playerHitChannel;
     [SerializeField] EventChannelSO playerDeathChannel;
 
-    public AudioSource deathSound;
+    public AudioSource DeathSound;
 
     private void Start()
     {
-        deathSound = GetComponent<AudioSource>();
         Health = MaxHealth;
+        DeathSound = GetComponent<AudioSource>();
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
@@ -32,17 +32,19 @@ public class PlayerHit : MonoBehaviour, IDamagable
 
     public void TakeDamage(int damage)
     {
-        Health -= damage;
         playerHitChannel.Invoke(this);
+
         if (Health <= 0)
         {
             Die();
         }
+
+        Health -= damage;
     }
 
     public void Die()
     {
         Debug.Log("Player died");
-        deathSound.Play();
+        DeathSound.Play();
     }
 }

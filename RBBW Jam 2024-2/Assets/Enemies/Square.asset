@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ced38498788abe40bed94011f9e016f, type: 3}
   m_Name: Square
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 0.25
   type: 0
   prefab: {fileID: 6927219523804524883, guid: 0af281bf152d63048a700308b2b5bfc6, type: 3}
   health: 0
