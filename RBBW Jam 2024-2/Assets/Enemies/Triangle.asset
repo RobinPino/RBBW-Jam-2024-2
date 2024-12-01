@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ced38498788abe40bed94011f9e016f, type: 3}
   m_Name: Triangle
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 0.4
   type: 1
   prefab: {fileID: 5824122951448509641, guid: 53eee09a8d92ee548aef49c3d9702b84, type: 3}
   health: 0
