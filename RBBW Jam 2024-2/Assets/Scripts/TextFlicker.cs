@@ -23,7 +23,6 @@ public class TextFlicker : MonoBehaviour
         {
             float time = (Time.time - startTime) * AnimationSpeed;
             float value = curve.Evaluate(time);
-            print(value);
             text.color = new Color(text.color.r, text.color.g, text.color.b, value);
         }
     }
