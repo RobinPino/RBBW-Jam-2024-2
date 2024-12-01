@@ -16,6 +16,7 @@ public class SimpleScanner : MonoBehaviour
     private void Start()
     {
         mat = GetComponent<SpriteRenderer>().material;
+        if(GameManager.Instance.ScannerOn) { StartScan(); }
     }
 
     [ContextMenu("Start Scan")]
