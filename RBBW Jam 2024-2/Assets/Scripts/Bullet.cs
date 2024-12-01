@@ -9,6 +9,8 @@ public class Bullet : MonoBehaviour
     private Rigidbody2D RigidBody;
     public float BulletSpeed;
 
+    [SerializeField] EventChannelSO enemyKillChannel;
+
     void Start()
     {
         MainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
@@ -30,6 +32,8 @@ public class Bullet : MonoBehaviour
         if(collision.gameObject.tag == "Enemy")
         {
             Debug.Log("Hit!");
+
+            enemyKillChannel.Invoke(this);
 
             Destroy(collision.gameObject);
             Destroy(gameObject);

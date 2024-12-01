@@ -22,7 +22,6 @@ public class PlayerHit : MonoBehaviour, IDamagable
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            Debug.Log("Player Hit!");
 
             Destroy(collision.gameObject);
 
@@ -32,6 +31,7 @@ public class PlayerHit : MonoBehaviour, IDamagable
 
     public void TakeDamage(int damage)
     {
+        Debug.Log("Player Hit!");
         playerHitChannel.Invoke(this);
 
         if (Health <= 0)
