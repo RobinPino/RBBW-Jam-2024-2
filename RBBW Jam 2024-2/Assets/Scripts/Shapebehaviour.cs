@@ -7,10 +7,7 @@ public class ShapeBehaviour : MonoBehaviour
     public Shape shape;
     private void Start()
     {
-        GetComponent<SpriteRenderer>().sprite = shape.sprite;
-        GetComponent<SpriteRenderer>().material = shape.mat;
         rb2d = GetComponent<Rigidbody2D>();
-
     }
 
     // Update is called once per frame

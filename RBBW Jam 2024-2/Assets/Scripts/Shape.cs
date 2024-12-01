@@ -7,7 +7,6 @@ public class Shape : ScriptableObject
     public float speed;
 	public enum Type	{Square,Triangle,Rhombus};
     public Type type;
-    public Sprite sprite;
+    public GameObject prefab;
     public int health;
-    public Material mat;
 }

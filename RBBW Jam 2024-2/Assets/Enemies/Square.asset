@@ -14,7 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   type: 0
-  sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  prefab: {fileID: 4743997608007130741, guid: 0b967800aef979243927754fce0daaf7, type: 3}
+  prefab: {fileID: 6927219523804524883, guid: 0af281bf152d63048a700308b2b5bfc6, type: 3}
   health: 0
-  mat: {fileID: 2100000, guid: 3f9b09a414d777e4e88e04d729d1ee37, type: 2}
