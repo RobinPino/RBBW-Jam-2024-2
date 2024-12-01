@@ -8,8 +8,8 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: RadarScanner
-  m_Shader: {fileID: -6465566751694194690, guid: d6ebb82d3342c7f40914cc8b815a3aad, type: 3}
-  m_Parent: {fileID: 2100000, guid: 7eb4f6f999d79854fb9534c81470bf40, type: 2}
+  m_Shader: {fileID: -6465566751694194690, guid: 52a652d6b0e0c2d4d9bcfd183f346cb2, type: 3}
+  m_Parent: {fileID: 2100000, guid: 3f9b09a414d777e4e88e04d729d1ee37, type: 2}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []

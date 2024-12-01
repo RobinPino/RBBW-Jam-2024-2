@@ -10,4 +10,5 @@ public class Shape : ScriptableObject
     public Sprite sprite;
     public GameObject prefab;
     public int health;
+    public Material mat;
 }

@@ -8,6 +8,7 @@ public class ShapeBehaviour : MonoBehaviour
     private void Start()
     {
         GetComponent<SpriteRenderer>().sprite = shape.sprite;
+        GetComponent<SpriteRenderer>().material = shape.mat;
         rb2d = GetComponent<Rigidbody2D>();
 
     }
