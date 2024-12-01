@@ -15,6 +15,7 @@ public class ObjectPool<T> : ScriptableObject, IInitializable where T : Componen
     public void Initialize()
     {
         parent = new GameObject(prefab.name + " Pool").transform;
+        DontDestroyOnLoad(parent);
         pool = new List<PooledObject>();
         PopulatePool(poolStartSize);
     }

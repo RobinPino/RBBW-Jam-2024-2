@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: click_effect_1
   m_EditorClassIdentifier: 
   soundVariations:
-  - clip: {fileID: 8300000, guid: 8fddcc03b59109c408e2f99b26fd6633, type: 3}
+  - clip: {fileID: 8300000, guid: ec030a97e49442e47a517198c351927c, type: 3}
     volume: 1
-  - clip: {fileID: 8300000, guid: 000df6f8f15d6df4c8d989571ce65e28, type: 3}
+  - clip: {fileID: 8300000, guid: 56703d95cf550334a8fdc4801c54cb55, type: 3}
     volume: 1
-  - clip: {fileID: 8300000, guid: 933796174cc473548b0c161af5c1a875, type: 3}
+  - clip: {fileID: 8300000, guid: a52a1d7696997da4bb5e654241c7b9e4, type: 3}
     volume: 1
   loop: 0
   delay: 0
