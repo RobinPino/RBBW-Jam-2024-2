@@ -48,10 +48,10 @@ Material:
     - _RadarTime: 0
     - _RevealRadius: 0
     - _RevealWidth: 0.13
-    - _RotateSpeed: 0.2
+    - _RotateSpeed: 0.5
     m_Colors:
     - _CentrePos: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 0.5235849, g: 1, b: 0.5259188, a: 0.2784314}
+    - _Color: {r: 1, g: 0.5568628, b: 0.09411766, a: 0.2784314}
   m_BuildTextureStacks: []
 --- !u!114 &6597340030608213055
 MonoBehaviour:

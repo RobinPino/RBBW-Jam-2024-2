@@ -4910,7 +4910,7 @@ MonoBehaviour:
         m_MethodName: Play
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 11400000, guid: acca0438abe89924cad9d86c9e31e235, type: 2}
           m_ObjectArgumentAssemblyTypeName: SoundTypeSO, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
