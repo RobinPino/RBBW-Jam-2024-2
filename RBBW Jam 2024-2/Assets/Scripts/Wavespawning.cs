@@ -9,7 +9,7 @@ public class Wavespawning : MonoBehaviour
     public List<WaveSO> waves;
     [SerializeField] float radius;
     [SerializeField] float timeBetweenWaves;
-    [SerializeField] int wavesSpawned = 0;
+    public int wavesSpawned = 0;
 
     [SerializeField] EventChannelSO enemySpawnChannel;
 

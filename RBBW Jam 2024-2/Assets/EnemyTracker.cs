@@ -5,29 +5,30 @@ using UnityEngine;
 public class EnemyTracker : MonoBehaviour
 {
     public int ActiveEnemies = 0;
-    public bool CanEnd = false;
+    Wavespawning waveSpawning;
+    [SerializeField] GameObject WinScreen;
+
+    private void Start()
+    {
+        waveSpawning = GetComponent<Wavespawning>();
+    }
 
     public void EnemySpawned()
     {
         ActiveEnemies++;
-        CanEnd = false;
         Debug.Log("Amount of active enemies: " + ActiveEnemies);
     }
 
     public void EnemyKilled()
     {
         ActiveEnemies--;
-        CanEnd = true;
         Debug.Log("Amount of active enemies: " + ActiveEnemies);
 
-        if (ActiveEnemies == 0 && CanEnd)
+        if (ActiveEnemies <= 0 && waveSpawning.wavesSpawned >= waveSpawning.waves.Count)
         {
-            NextWave();
+            print("All enemies are kill");
+            WinScreen.SetActive(true);
+            Time.timeScale = 0f;
         }
-    }
-
-    public void NextWave()
-    {
-        Debug.Log("Wave completed, starting next wave");
     }
 }

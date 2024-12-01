@@ -21,6 +21,7 @@ public class SoundTypeSO : ScriptableObject
     }
 }
 
+#if UNITY_EDITOR
 public class SoundSOCreationHelper : MonoBehaviour
 {
     [MenuItem("Assets/Create/SoundSO from selection", priority =10)]
@@ -51,6 +52,8 @@ public class SoundSOCreationHelper : MonoBehaviour
         return Selection.activeObject is AudioClip;
     }
 }
+
+#endif
 
 [Serializable]
 public class Sound
