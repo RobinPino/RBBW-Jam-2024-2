@@ -1366,22 +1366,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1974598605918566000, guid: fb2c537d66b8b0c4f9dabb3468d479a8, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 70f9f0350ca06f2439cff9f3e3499d6b, type: 3}
-    - target: {fileID: 7417139767138662799, guid: fb2c537d66b8b0c4f9dabb3468d479a8, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 42bccd59e509a6841868856dbd3668e8, type: 3}
     - target: {fileID: 7794355087374691020, guid: fb2c537d66b8b0c4f9dabb3468d479a8, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7853999741343531388, guid: fb2c537d66b8b0c4f9dabb3468d479a8, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 3460a6017f2583d4db6d8441bacdf4b6, type: 3}
     - target: {fileID: 8428806295994146017, guid: fb2c537d66b8b0c4f9dabb3468d479a8, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
