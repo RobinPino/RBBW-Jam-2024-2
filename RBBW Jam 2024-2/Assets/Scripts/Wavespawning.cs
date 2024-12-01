@@ -7,7 +7,6 @@ using UnityEngine;
 public class Wavespawning : MonoBehaviour
 {
     public List<WaveSO> waves;
-    public GameObject enemy;
     [SerializeField] float radius;
     [SerializeField] float timeBetweenWaves;
     [SerializeField] int wavesSpawned = 0;
@@ -50,7 +49,7 @@ public class Wavespawning : MonoBehaviour
     {
         float direction = UnityEngine.Random.value * 2 * Mathf.PI;
         Vector3 spawnLocation = new Vector3(radius * Mathf.Cos(direction), radius * Mathf.Sin(direction), 0);
-        GameObject currentEntity = Instantiate(enemy, spawnLocation, Quaternion.identity);
+        GameObject currentEntity = Instantiate(shape.prefab, spawnLocation, Quaternion.identity);
         currentEntity.GetComponent<ShapeBehaviour>().shape = shape;
 
     }
