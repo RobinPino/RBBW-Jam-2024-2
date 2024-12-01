@@ -69,4 +69,5 @@ public class Wavespawning : MonoBehaviour
 
         throw new ArgumentOutOfRangeException(nameof(dictindex), "Index exceeds the range of the expanded dictionary.");
     }
+
 }
