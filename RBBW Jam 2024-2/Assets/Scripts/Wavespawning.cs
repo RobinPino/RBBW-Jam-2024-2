@@ -11,6 +11,7 @@ public class Wavespawning : MonoBehaviour
     [SerializeField] float timeBetweenWaves;
     [SerializeField] int wavesSpawned = 0;
 
+    [SerializeField] EventChannelSO enemySpawnChannel;
 
     private void FixedUpdate()
     {
@@ -47,6 +48,7 @@ public class Wavespawning : MonoBehaviour
 
     private void SpawnEnemy(Shape shape)
     {
+        enemySpawnChannel.Invoke(this);
         float direction = UnityEngine.Random.value * 2 * Mathf.PI;
         Vector3 spawnLocation = new Vector3(radius * Mathf.Cos(direction), radius * Mathf.Sin(direction), 0);
         GameObject currentEntity = Instantiate(shape.prefab, spawnLocation, Quaternion.identity);

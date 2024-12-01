@@ -10,6 +10,8 @@ public class Bullet : MonoBehaviour
     public float BulletSpeed;
     [SerializeField] GameObject hitEffect;
 
+    [SerializeField] EventChannelSO enemyKillChannel;
+
     void Start()
     {
         MainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
@@ -39,6 +41,9 @@ public class Bullet : MonoBehaviour
         if(collision.gameObject.tag == "Enemy")
         {
             Debug.Log("Hit!");
+
+            enemyKillChannel.Invoke(this);
+
             Instantiate(hitEffect, transform.position, Quaternion.identity);
             Destroy(collision.gameObject);
             Destroy(gameObject);
