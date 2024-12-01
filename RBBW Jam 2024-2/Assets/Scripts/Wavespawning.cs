@@ -15,7 +15,7 @@ public class Wavespawning : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Time.time % timeBetweenWaves == 0 && wavesSpawned<waves.Count)
+        if (Time.timeAsDouble % timeBetweenWaves == 0 && wavesSpawned < waves.Count)
         {
             SpawnWave(waves[wavesSpawned]);
             wavesSpawned += 1;
