@@ -9,10 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ced38498788abe40bed94011f9e016f, type: 3}
-  m_Name: Rhombus
+  m_Script: {fileID: 11500000, guid: a4985de886cc6da4a9d17d3630526826, type: 3}
+  m_Name: gun_barrel_expanding
   m_EditorClassIdentifier: 
-  speed: 0.7
-  type: 2
-  prefab: {fileID: 5824122951448509641, guid: ed89534bb69c0564f975edf4af781154, type: 3}
-  health: 0
+  soundVariations:
+  - clip: {fileID: 8300000, guid: c90b3fc7d16fb4241aaa24c65aeb956c, type: 3}
+    volume: 1
+  loop: 0
+  delay: 0

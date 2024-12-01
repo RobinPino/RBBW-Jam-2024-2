@@ -8,6 +8,7 @@ public class Bullet : MonoBehaviour
     private Camera MainCamera;
     private Rigidbody2D RigidBody;
     public float BulletSpeed;
+    [SerializeField] GameObject hitEffect;
 
     [SerializeField] EventChannelSO enemyKillChannel;
 
@@ -35,6 +36,7 @@ public class Bullet : MonoBehaviour
 
             enemyKillChannel.Invoke(this);
 
+            Instantiate(hitEffect, transform.position, Quaternion.identity);
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }
