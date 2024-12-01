@@ -1121,10 +1121,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
-  - {fileID: 11400000, guid: 8d5a3481079eaa64b81f12a378fc5614, type: 2}
-  - {fileID: 11400000, guid: 0f716fe2912e3834393406dd526d1266, type: 2}
-  - {fileID: 11400000, guid: e8e65096a7ee6e345b0eb1d3c2a9b5d9, type: 2}
-  - {fileID: 11400000, guid: 41bbc2aac544ca746b1c528104839cfd, type: 2}
+  - {fileID: 11400000, guid: b8a9e0c2a8cf7e544859fa4941fab995, type: 2}
+  - {fileID: 11400000, guid: 1efb3d5131adf744390b09ca9564b496, type: 2}
+  - {fileID: 11400000, guid: f1ff7dfc528fb1e41b60dc0126c1535c, type: 2}
+  - {fileID: 11400000, guid: e2753f6e49ee2f643bdd91a16d35a292, type: 2}
   enemy: {fileID: 1029925871866633794, guid: 8304476646407b74cbdcd7231b1afe27, type: 3}
   radius: 10
   timeBetweenWaves: 15

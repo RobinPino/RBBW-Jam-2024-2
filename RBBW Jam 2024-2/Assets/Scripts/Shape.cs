@@ -5,7 +5,7 @@ using UnityEngine;
 public class Shape : ScriptableObject
 {
     public float speed;
-	public enum Type	{Square,Triangle,Hexagon};
+	public enum Type	{Square,Triangle,Rhombus};
     public Type type;
     public Sprite sprite;
     public int health;
