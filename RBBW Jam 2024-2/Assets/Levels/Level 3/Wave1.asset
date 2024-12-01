@@ -16,4 +16,5 @@ MonoBehaviour:
   enemyTypes:
   - {fileID: 11400000, guid: a23d2ff522b883441ae48501a8f400e7, type: 2}
   - {fileID: 11400000, guid: e26c0d16bc4a2e2409c5310d687734b7, type: 2}
-  enemynrs: 0500000005000000
+  - {fileID: 11400000, guid: ce6f5765bba415c4597553afaa2797e0, type: 2}
+  enemynrs: 040000000400000004000000
