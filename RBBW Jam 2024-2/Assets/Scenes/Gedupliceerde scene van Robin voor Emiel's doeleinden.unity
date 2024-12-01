@@ -216,7 +216,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - {fileID: 11400000, guid: e237977f7402fdf4db907f0255ec1197, type: 2}
-  - {fileID: 11400000, guid: e237977f7402fdf4db907f0255ec1197, type: 2}
+  - {fileID: 11400000, guid: ccd8d67dbe1c07549b03efe8e3f503ff, type: 2}
+  - {fileID: 11400000, guid: d769507485ed18749b216eb3c2f0b38a, type: 2}
+  - {fileID: 11400000, guid: b130f70ca74a4734b8fabdb67c95b63a, type: 2}
   radius: 10
   timeBetweenWaves: 10
   wavesSpawned: 0
@@ -7973,7 +7975,7 @@ Transform:
   m_GameObject: {fileID: 1933562304}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.76, y: -0.09, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
