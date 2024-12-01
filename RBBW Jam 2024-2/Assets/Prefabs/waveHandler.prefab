@@ -10,6 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6467413195698982494}
   - component: {fileID: 5833624818166629858}
+  - component: {fileID: 413030234138676316}
+  - component: {fileID: 4937589868047527038}
+  - component: {fileID: 5614242539708418517}
+  - component: {fileID: 5540687099013699057}
   m_Layer: 0
   m_Name: waveHandler
   m_TagString: Untagged
@@ -50,5 +54,104 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d769507485ed18749b216eb3c2f0b38a, type: 2}
   - {fileID: 11400000, guid: b130f70ca74a4734b8fabdb67c95b63a, type: 2}
   radius: 10
-  timeBetweenWaves: 10
+  timeBetweenWaves: 12
   wavesSpawned: 0
+  enemySpawnChannel: {fileID: 11400000, guid: a5e99bbac160097429fc81e902047e29, type: 2}
+--- !u!114 &413030234138676316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5627242897663747775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07370da741b70ae4b8dbaecf9688002e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveEnemies: 0
+  WinGame: {fileID: 11400000, guid: e2918b4ba6222414fb62f9fb5e0da0c2, type: 2}
+--- !u!114 &4937589868047527038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5627242897663747775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2dba3ebd863b7841889be00ce576e11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 024d4d2cc1b3a4f469edb28655ee311f, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 413030234138676316}
+        m_TargetAssemblyTypeName: EnemyTracker, Assembly-CSharp
+        m_MethodName: EnemyKilled
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5614242539708418517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5627242897663747775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2dba3ebd863b7841889be00ce576e11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: ca7c88525cc831346a713aae8b3923ef, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 413030234138676316}
+        m_TargetAssemblyTypeName: EnemyTracker, Assembly-CSharp
+        m_MethodName: EnemyKilled
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5540687099013699057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5627242897663747775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2dba3ebd863b7841889be00ce576e11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: a5e99bbac160097429fc81e902047e29, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 413030234138676316}
+        m_TargetAssemblyTypeName: EnemyTracker, Assembly-CSharp
+        m_MethodName: EnemySpawned
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

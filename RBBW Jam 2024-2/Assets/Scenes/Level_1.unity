@@ -2224,109 +2224,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2273951302996054053, guid: 7f3f1c34888916241a3747c27884e8b8, type: 3}
   m_PrefabInstance: {fileID: 6542253189510539251}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2120840510 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5627242897663747775, guid: b5cbbd9e0c4eced428bc0a367a00478d, type: 3}
-  m_PrefabInstance: {fileID: 1103751637867422739}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2120840513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2120840510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2dba3ebd863b7841889be00ce576e11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: a5e99bbac160097429fc81e902047e29, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2120840516}
-        m_TargetAssemblyTypeName: EnemyTracker, Assembly-CSharp
-        m_MethodName: EnemySpawned
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &2120840514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2120840510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2dba3ebd863b7841889be00ce576e11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: ca7c88525cc831346a713aae8b3923ef, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2120840516}
-        m_TargetAssemblyTypeName: EnemyTracker, Assembly-CSharp
-        m_MethodName: EnemyKilled
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &2120840515
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2120840510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2dba3ebd863b7841889be00ce576e11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 024d4d2cc1b3a4f469edb28655ee311f, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2120840516}
-        m_TargetAssemblyTypeName: EnemyTracker, Assembly-CSharp
-        m_MethodName: EnemyKilled
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &2120840516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2120840510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07370da741b70ae4b8dbaecf9688002e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ActiveEnemies: 0
-  WinGame: {fileID: 11400000, guid: e2918b4ba6222414fb62f9fb5e0da0c2, type: 2}
 --- !u!1001 &1103751637867422739
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2339,14 +2236,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: waveHandler
       objectReference: {fileID: 0}
-    - target: {fileID: 5833624818166629858, guid: b5cbbd9e0c4eced428bc0a367a00478d, type: 3}
-      propertyPath: timeBetweenWaves
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 5833624818166629858, guid: b5cbbd9e0c4eced428bc0a367a00478d, type: 3}
-      propertyPath: enemySpawnChannel
-      value: 
-      objectReference: {fileID: 11400000, guid: a5e99bbac160097429fc81e902047e29, type: 2}
     - target: {fileID: 6467413195698982494, guid: b5cbbd9e0c4eced428bc0a367a00478d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.00092086196
@@ -2390,19 +2279,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5627242897663747775, guid: b5cbbd9e0c4eced428bc0a367a00478d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2120840516}
-    - targetCorrespondingSourceObject: {fileID: 5627242897663747775, guid: b5cbbd9e0c4eced428bc0a367a00478d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2120840515}
-    - targetCorrespondingSourceObject: {fileID: 5627242897663747775, guid: b5cbbd9e0c4eced428bc0a367a00478d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2120840514}
-    - targetCorrespondingSourceObject: {fileID: 5627242897663747775, guid: b5cbbd9e0c4eced428bc0a367a00478d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2120840513}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5cbbd9e0c4eced428bc0a367a00478d, type: 3}
 --- !u!1001 &2469431260379531539
 PrefabInstance:
