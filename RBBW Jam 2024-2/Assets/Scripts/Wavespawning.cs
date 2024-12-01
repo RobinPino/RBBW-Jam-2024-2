@@ -10,21 +10,29 @@ public class Wavespawning : MonoBehaviour
     [SerializeField] float radius;
     [SerializeField] float timeBetweenWaves;
     public int wavesSpawned = 0;
+    float timeSinceLastWave = 0;
 
     [SerializeField] EventChannelSO enemySpawnChannel;
 
+    private void Start()
+    {
+        SpawnNextWave();
+    }
+
     private void FixedUpdate()
     {
-        if (Time.timeAsDouble % timeBetweenWaves == 0 && wavesSpawned < waves.Count)
+        if (Time.time - timeSinceLastWave >= timeBetweenWaves && wavesSpawned < waves.Count)
         {
-            SpawnWave(waves[wavesSpawned]);
-            wavesSpawned += 1;
+            SpawnNextWave();
         }
     }
-    private void SpawnWave(WaveSO wave)
+    private void SpawnNextWave()
     {
+        WaveSO wave = waves[wavesSpawned];
         StartCoroutine(a(wave));
 
+        timeSinceLastWave = Time.time;
+        wavesSpawned += 1;
     }
 
     IEnumerator a(WaveSO wave)

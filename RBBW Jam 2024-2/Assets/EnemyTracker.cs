@@ -6,7 +6,7 @@ public class EnemyTracker : MonoBehaviour
 {
     public int ActiveEnemies = 0;
     Wavespawning waveSpawning;
-    [SerializeField] GameObject WinScreen;
+    [SerializeField]EventChannelSO WinGame;
 
     private void Start()
     {
@@ -27,8 +27,7 @@ public class EnemyTracker : MonoBehaviour
         if (ActiveEnemies <= 0 && waveSpawning.wavesSpawned >= waveSpawning.waves.Count)
         {
             print("All enemies are kill");
-            WinScreen.SetActive(true);
-            Time.timeScale = 0f;
+            WinGame.Invoke(this);
         }
     }
 }
