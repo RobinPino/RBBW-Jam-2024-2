@@ -21,17 +21,23 @@ public class ShapeBehaviour : MonoBehaviour
     void Move()
     {
         Vector3 toTarget = targetLocation - transform.position;
-        if ((shape.type == Shape.Type.Square) || (shape.type == Shape.Type.Triangle) || (shape.type == Shape.Type.Hexagon))
-        {
-            if (toTarget.magnitude > 1)
+        if (toTarget.magnitude > 1) { 
+            if ((shape.type == Shape.Type.Square) || (shape.type == Shape.Type.Triangle))
             {
+
+            
                 rb2d.velocity = toTarget.normalized * shape.speed;
 
+           
             }
-            else
+            else if (shape.type == Shape.Type.Rhombus)
             {
-                rb2d.velocity = Vector3.zero;
+                rb2d.velocity = (toTarget.normalized + 2*(new Vector3(-toTarget.y, toTarget.x, 0).normalized) * Mathf.Sin(Time.time*2)) * shape.speed;
             }
+    }
+        else
+        {
+                rb2d.velocity = Vector3.zero;
         }
     }
 
