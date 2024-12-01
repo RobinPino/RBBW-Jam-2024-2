@@ -1022,7 +1022,9 @@ MonoBehaviour:
   Levels:
   - Level_1
   - Level_2
-  - Level_2
+  - Level_3
+  - Level_4
+  - infinite
   LevelText: {fileID: 1886292411}
 --- !u!1 &1227874929
 GameObject:
