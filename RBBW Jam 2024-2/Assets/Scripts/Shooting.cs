@@ -15,6 +15,7 @@ public class Shooting : MonoBehaviour
     private float Timer;
     public float ShootingCooldown;
 
+    public EventChannelSO ShootEvent;
 
 
     void Start()
@@ -44,6 +45,7 @@ public class Shooting : MonoBehaviour
         {
             CanFire = false;
             Instantiate(Bullet, BulletTransform.position, Quaternion.identity);
+            ShootEvent.Invoke(this);
         }
     }
 }
