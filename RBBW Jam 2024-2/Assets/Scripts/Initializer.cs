@@ -1,5 +1,6 @@
 using UnityEngine;
 
+
 public class Initializer : MonoBehaviour
 {
     [Header("Objects added must implement IInitializable!")]
@@ -7,6 +8,7 @@ public class Initializer : MonoBehaviour
 
     private void Awake()
     {
+        DontDestroyOnLoad(this);
         foreach (IInitializable initializable in initializables)
         {
             initializable.Initialize();

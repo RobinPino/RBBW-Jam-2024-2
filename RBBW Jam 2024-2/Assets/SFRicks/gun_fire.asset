@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: gun_fire
   m_EditorClassIdentifier: 
   soundVariations:
-  - clip: {fileID: 8300000, guid: 388e535fcd99aba41ad9c7e73c344c4e, type: 3}
+  - clip: {fileID: 8300000, guid: f369d28eee5f46544be8400934b22ba9, type: 3}
     volume: 1
   loop: 0
+  delay: 0
