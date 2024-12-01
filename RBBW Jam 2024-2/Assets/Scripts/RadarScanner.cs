@@ -9,6 +9,7 @@ public class RadarScanner : MonoBehaviour
     private void Start()
     {
         mat = GetComponent<SpriteRenderer>().material;
+        if (GameManager.Instance.RadarOn) { StartScan(); }
     }
 
     [ContextMenu("Start Scan")]

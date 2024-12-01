@@ -45,7 +45,7 @@ public class Shooting : MonoBehaviour
         {
             CanFire = false;
             Instantiate(Bullet, BulletTransform.position, Quaternion.identity);
-            //ShootEvent.Invoke(this);
+            ShootEvent.Invoke(this);
         }
     }
 }
