@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ced38498788abe40bed94011f9e016f, type: 3}
   m_Name: Hexagon
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 0.7
   type: 2
   sprite: {fileID: 2747690628134850419, guid: b670ab75dde984907b8570040daa08c5, type: 3}
+  prefab: {fileID: 0}
+  health: 0

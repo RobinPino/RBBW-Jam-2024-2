@@ -40,7 +40,7 @@ public class Wavespawning : MonoBehaviour
         for (int enemiesLeftToSpawn = remainingEnemies.Values.Sum(); enemiesLeftToSpawn > 0; enemiesLeftToSpawn--)
         {
             int enemyIndex = UnityEngine.Random.Range(0, enemiesLeftToSpawn);
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(wave.spawnDelay);
             SpawnEnemy(GetShapeFromDict(remainingEnemies, enemyIndex));
 
         }
@@ -69,4 +69,5 @@ public class Wavespawning : MonoBehaviour
 
         throw new ArgumentOutOfRangeException(nameof(dictindex), "Index exceeds the range of the expanded dictionary.");
     }
+
 }
