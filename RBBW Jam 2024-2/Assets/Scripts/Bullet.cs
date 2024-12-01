@@ -24,6 +24,14 @@ public class Bullet : MonoBehaviour
         RigidBody.velocity = new Vector2(Direction.x, Direction.y).normalized * BulletSpeed;
         float ZRotation = Mathf.Atan2(Rotation.y, Rotation.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, ZRotation + 180);
+
+        StartCoroutine(DestroyBullet());
+    }
+
+    IEnumerator DestroyBullet()
+    {
+        yield return new WaitForSeconds(5f);
+        Destroy(gameObject);
     }
 
     void OnTriggerEnter2D(Collider2D collision)
