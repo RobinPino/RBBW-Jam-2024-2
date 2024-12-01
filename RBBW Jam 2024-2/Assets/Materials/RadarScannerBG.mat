@@ -42,8 +42,10 @@ Material:
     m_Ints: []
     m_Floats:
     - _IsScanning: 0
+    - _OpacityMaster: 1
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _RadarTime: 0
     - _RevealRadius: 0
     - _RevealWidth: 0.13
     - _RotateSpeed: 0.2
