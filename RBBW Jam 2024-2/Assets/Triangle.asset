@@ -15,6 +15,5 @@ MonoBehaviour:
   speed: 2
   type: 1
   sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  prefab: {fileID: 0}
   health: 0
-  mat: {fileID: 2100000, guid: 3f9b09a414d777e4e88e04d729d1ee37, type: 2}
+  mat: {fileID: 2100000, guid: d1bb3b2fe0109454286e0b2b67377e79, type: 2}

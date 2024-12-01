@@ -471,6 +471,7 @@ MonoBehaviour:
   MaxHealth: 2
   playerHitChannel: {fileID: 11400000, guid: ca7c88525cc831346a713aae8b3923ef, type: 2}
   playerDeathChannel: {fileID: 11400000, guid: 62a3b3015cbb02b4493c97db59d1a64e, type: 2}
+  deathSound: {fileID: 0}
 --- !u!58 &190084583
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4479,7 +4480,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1821525429
 Transform:
   m_ObjectHideFlags: 0
@@ -4513,6 +4514,7 @@ MonoBehaviour:
   BulletTransform: {fileID: 960845787}
   CanFire: 1
   ShootingCooldown: 0.1
+  ShootEvent: {fileID: 0}
 --- !u!1 &1933562304
 GameObject:
   m_ObjectHideFlags: 0
