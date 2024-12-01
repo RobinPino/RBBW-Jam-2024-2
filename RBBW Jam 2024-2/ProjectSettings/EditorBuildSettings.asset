@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Infinite.unity
     guid: e2b8c31ba363dc24b8680e57a7a5f6cd
+  - enabled: 1
+    path: Assets/Scenes/StartScreen.unity
+    guid: 6a49c70d7ad856549962277662563f16
   m_configObjects: {}
