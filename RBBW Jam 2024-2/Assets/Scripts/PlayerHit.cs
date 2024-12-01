@@ -18,6 +18,7 @@ public class PlayerHit : MonoBehaviour, IDamagable
     public void TakeDamage(int damage)
     {
         Health -= damage;
+        playerHitChannel.Invoke(this);
         if (Health <= 0)
         {
             Die();
